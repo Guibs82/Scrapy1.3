@@ -1,0 +1,46 @@
+Create Project
+
+
+Avaukabke tool commands
+    scrapy -h   [查看所有可用命令]
+        Global commands:
+            startproject:
+                scrapy startproject ProjectName [Project_Dir]
+                    若未指定Project_Dir, 则Project_Dir 名就为ProjectName
+
+            genspider:
+                scrapy genspider [-t 爬虫模板] <爬虫名> <作用域>
+                    创建一个新的爬虫在当前目录.
+                        [-t 爬虫模板] 为basic[默认] crawl csvfeed xmlfeed,
+                        <domain> 用来生成allowed_domains 和start_urls.
+
+            settings
+            runspider:
+                scrapy runspider <spider_file.py>  运行一个Python 文件中的爬虫而不用创建project
+
+            shell
+            fetch:
+                scrapy fetch <url>
+                    --spider=SPIDER
+                    --headers 打印response's HTTP headers
+            view
+            version
+
+        Project-only commands:
+            crawl:
+                scrapy crawl <spider>
+                    开启某个爬虫来爬取
+
+            check:
+
+
+            list:
+                scrapy list
+                    列举当前project 中可用的爬虫
+
+            edit:
+                scrapy edit <spider>
+                    编辑某个爬虫
+
+            parse
+            bench
