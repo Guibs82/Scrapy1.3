@@ -13,3 +13,8 @@ class WeekMovieItem(scrapy.Item):
     movie_poster = scrapy.Field()
     movie_desc = scrapy.Field()
     movie_score = scrapy.Field()
+
+class NJYBItem(scrapy.Item):
+    title = scrapy.Field()
+    author = scrapy.Field()
+    summary = scrapy.Field()
